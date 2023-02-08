@@ -16,8 +16,8 @@
   padding: 0;
 }
 
-#root {
-  background: linear-gradient(45deg, #242424 0%, #575757 100%);
+#app {
+  background: var(--gradient, linear-gradient(45deg, #242424 0%, #575757 100%));
   background-repeat: no-repeat;
   min-height: 100vh;
   width: 100%;
@@ -25,4 +25,63 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+.gradient_container {
+  margin: 4rem 0 2rem 0;
+}
+
+.gradient_box {
+  padding: 1rem;
+  margin: 1rem auto;
+  background-color: #393939;
+  width: fit-content;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.gradient {
+  font-family: monospace;
+  letter-spacing: 0.125rem;
+  font-size: 1.5rem;
+  word-break: break-all;
+}
+
+.gradient_copy {
+  background-color: #24242462;
+  border-radius: 0.25rem;
+  padding: 0.35rem;
+}
+
+.input_container {
+  min-width: 450px;
+  background-color: #24242462;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  font-size: 1.25rem;
+  margin: 3rem auto 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: max-content;
+}
+
+.input_item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.colour_text {
+  font-family: monospace;
+}
+
+.generate_new {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  padding: 0.25rem 0.75rem;
 }
